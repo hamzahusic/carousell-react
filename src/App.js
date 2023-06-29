@@ -24,7 +24,7 @@ function App() {
         <div className='flex gap-5 justify-center items-center py-5'>
           {
             images.map((img,index) => (
-              <button onClick={() => {setCarousel(index*(-100))}} className={`w-2 h-2 ${ index*(-100) == carousel ? "bg-black" : "bg-gray-400"} rounded-full`}></button>
+              <button onClick={() => {setCarousel(index*(-100))}} className={`w-2 h-2 ${ index*(-100) === carousel ? "bg-black" : "bg-gray-400"} rounded-full`}></button>
             ))
           }
         </div>
